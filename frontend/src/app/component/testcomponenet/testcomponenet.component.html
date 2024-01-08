@@ -1,0 +1,30 @@
+<div class="container-fluid position-relative d-flex p-0">
+   <!-- Spinner Start -->
+   <!-- ... Spinner HTML ... -->
+
+   <!-- Sign Up Start -->
+   <div class="container-fluid">
+     <div class="row h-100 align-items-center justify-content-center" style="min-height: 100vh;">
+       <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+         <div class="bg-secondary rounded p-4 p-sm-5 my-4 mx-3">
+           <!-- ... Other HTML ... -->
+
+           <!-- Sign Up Form -->
+           <form (submit)="onSignUp()">
+     
+             <input type="text" class="form-control" id="floatingText" placeholder="jhondoe" [(ngModel)]="username" name="username">
+<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" [(ngModel)]="email" name="email">
+<input type="password" class="form-control" id="floatingPassword" placeholder="Password" [(ngModel)]="password" name="password">
+
+             <!-- ... Other Form Elements ... -->
+
+             <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Sign Up</button>
+           </form>
+
+           <p class="text-center mb-0">Already have an Account? <a href="">Sign In</a></p>
+         </div>
+       </div>
+     </div>
+   </div>
+   <!-- Sign Up End -->
+</div>
